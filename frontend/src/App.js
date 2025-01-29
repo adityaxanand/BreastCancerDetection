@@ -111,6 +111,23 @@ function App() {
       )}
 
       {error && <p className="error-message">{error}</p>}
+
+      {/* Example Input Block */}
+      <div className="example-inputs">
+        <h3>Example Inputs:</h3>
+        <div className="example-card-container">
+          <div className="example-card">
+            <h4>Benign (0) Prediction</h4>
+            <p><strong>Input:</strong> 10.31, 14.29, 65.83, 350.56, 0.0892, 0.0601, 0.0303, 0.0489, 0.1652, 0.04172</p>
+            <p><strong>Prediction:</strong> Benign (0) - Non-cancerous</p>
+          </div>
+          <div className="example-card">
+            <h4>Malignant (1) Prediction</h4>
+            <p><strong>Input:</strong> 20.57, 17.77, 132.9, 1326, 0.08474, 0.07864, 0.0869, 0.07017, 0.1812, 0.05667</p>
+            <p><strong>Prediction:</strong> Malignant (1) - Cancerous</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
